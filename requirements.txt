@@ -1,0 +1,3 @@
+https://github.com/LeekByLemon/Leek/archive/master.zip
+https://github.com/LeekByLemon/LeekTags/archive/master.zip
+https://github.com/LeekByLemon/LeekModding/archive/master.zip
