@@ -15,6 +15,9 @@ services:
     container_name: leek_bot
     hostname: leek_bot
     build: .
+    depends_on:
+      mariadb:
+        condition: service_started
     environment:
       SQL_HOST: leek_db
       SQL_USER: ${MARIADB_USER}
