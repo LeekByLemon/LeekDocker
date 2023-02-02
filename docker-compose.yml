@@ -14,7 +14,6 @@ services:
   bot:
     container_name: leek_bot
     hostname: leek_bot
-    image: leekbot
     build: .
     environment:
       SQL_HOST: leek_db
