@@ -8,6 +8,9 @@ services:
     volumes:
       - ./data:/var/lib/mysql:rw
     restart: always
+    environment:
+      MARIADB_USER: ${SQL_USER}
+      MARIADB_PASSWORD: ${SQL_PASSWORD}
     env_file:
       - .env
 
@@ -20,8 +23,6 @@ services:
         condition: service_started
     environment:
       SQL_HOST: leek_db
-      SQL_USER: ${MARIADB_USER}
-      SQL_PASSWORD: ${MARIADB_PASSWORD}
       SQL_DB: leek
     env_file:
       - .env
